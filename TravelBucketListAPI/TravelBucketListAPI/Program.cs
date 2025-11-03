@@ -110,12 +110,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             OnAuthenticationFailed = context =>
             {
-                Console.WriteLine($"❌ Authentication failed: {context.Exception.Message}");
+                Console.WriteLine($"Authentication failed: {context.Exception.Message}");
                 return Task.CompletedTask;
             },
             OnTokenValidated = context =>
             {
-                Console.WriteLine("✅ Token successfully validated.");
+                Console.WriteLine("Token successfully validated.");
                 return Task.CompletedTask;
             }
         };
