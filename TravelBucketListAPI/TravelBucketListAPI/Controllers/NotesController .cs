@@ -25,7 +25,7 @@ namespace TravelBucketListAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddNote(int destinationId, string note)
         {
-           // Add Note
+           // Add Notes
            //Add validations
             try
             {
