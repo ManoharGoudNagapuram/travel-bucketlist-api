@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: SelfAgentPool
 
 variables:
   buildConfiguration: 'Release'
